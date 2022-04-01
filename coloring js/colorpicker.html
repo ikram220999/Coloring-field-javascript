@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Color Picker</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/css/bootstrap-colorpicker.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.js"></script>
+    <style type="text/css">
+      :root {
+        background-color: #ffffff;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+
+      .tile {
+        background-color: "";
+        border: 1px solid #f0fff0;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 150px;
+        max-height: 150px;
+      }
+
+      .wrapper {
+        width: 500px;
+      }
+
+      .outer-wrapper {
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Test lukih lukih</h2>
+    <div class="container d-flex flex-row py-5 mx-3 center mx-auto">
+      <input
+        id="color2"
+        type="color"
+        value="#269faf"
+        class="mx-3 w-50 mx-auto"
+      />
+    </div>
+    <div class="outer-wrapper">
+      <!-- 1 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div id="section1" class="tile" onclick="changeColor('section1')"></div>
+        <div id="section2" class="tile" onclick="changeColor('section2')"></div>
+        <div id="section3" class="tile" onclick="changeColor('section3')"></div>
+        <div id="section4" class="tile" onclick="changeColor('section4')"></div>
+        <div id="section5" class="tile" onclick="changeColor('section5')"></div>
+        <div id="section6" class="tile" onclick="changeColor('section6')"></div>
+        <div id="section7" class="tile" onclick="changeColor('section7')"></div>
+        <div id="section8" class="tile" onclick="changeColor('section8')"></div>
+        <div id="section9" class="tile" onclick="changeColor('section9')"></div>
+        <div
+          id="section10"
+          class="tile"
+          onclick="changeColor('section10')"
+        ></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section11"
+          class="tile"
+          onclick="changeColor('section11')"
+        ></div>
+        <div
+          id="section12"
+          class="tile"
+          onclick="changeColor('section12')"
+        ></div>
+        <div
+          id="section13"
+          class="tile"
+          onclick="changeColor('section13')"
+        ></div>
+        <div
+          id="section14"
+          class="tile"
+          onclick="changeColor('section14')"
+        ></div>
+        <div
+          id="section15"
+          class="tile"
+          onclick="changeColor('section15')"
+        ></div>
+        <div
+          id="section16"
+          class="tile"
+          onclick="changeColor('section16')"
+        ></div>
+        <div
+          id="section17"
+          class="tile"
+          onclick="changeColor('section17')"
+        ></div>
+        <div
+          id="section18"
+          class="tile"
+          onclick="changeColor('section18')"
+        ></div>
+        <div
+          id="section19"
+          class="tile"
+          onclick="changeColor('section19')"
+        ></div>
+        <div
+          id="section20"
+          class="tile"
+          onclick="changeColor('section20')"
+        ></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section21"
+          class="tile"
+          onclick="changeColor('section21')"
+        ></div>
+        <div
+          id="section22"
+          class="tile"
+          onclick="changeColor('section22')"
+        ></div>
+        <div
+          id="section23"
+          class="tile"
+          onclick="changeColor('section23')"
+        ></div>
+        <div
+          id="section24"
+          class="tile"
+          onclick="changeColor('section24')"
+        ></div>
+        <div
+          id="section25"
+          class="tile"
+          onclick="changeColor('section25')"
+        ></div>
+        <div
+          id="section26"
+          class="tile"
+          onclick="changeColor('section26')"
+        ></div>
+        <div
+          id="section27"
+          class="tile"
+          onclick="changeColor('section27')"
+        ></div>
+        <div
+          id="section28"
+          class="tile"
+          onclick="changeColor('section28')"
+        ></div>
+        <div
+          id="section29"
+          class="tile"
+          onclick="changeColor('section29')"
+        ></div>
+        <div
+          id="section30"
+          class="tile"
+          onclick="changeColor('section30')"
+        ></div>
+      </div>
+
+      <!-- 4 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section31"
+          class="tile"
+          onclick="changeColor('section31')"
+        ></div>
+        <div
+          id="section32"
+          class="tile"
+          onclick="changeColor('section32')"
+        ></div>
+        <div
+          id="section33"
+          class="tile"
+          onclick="changeColor('section33')"
+        ></div>
+        <div
+          id="section34"
+          class="tile"
+          onclick="changeColor('section34')"
+        ></div>
+        <div
+          id="section35"
+          class="tile"
+          onclick="changeColor('section35')"
+        ></div>
+        <div
+          id="section36"
+          class="tile"
+          onclick="changeColor('section36')"
+        ></div>
+        <div
+          id="section37"
+          class="tile"
+          onclick="changeColor('section37')"
+        ></div>
+        <div
+          id="section38"
+          class="tile"
+          onclick="changeColor('section38')"
+        ></div>
+        <div
+          id="section39"
+          class="tile"
+          onclick="changeColor('section39')"
+        ></div>
+        <div
+          id="section40"
+          class="tile"
+          onclick="changeColor('section40')"
+        ></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section41"
+          class="tile"
+          onclick="changeColor('section41')"
+        ></div>
+        <div
+          id="section42"
+          class="tile"
+          onclick="changeColor('section42')"
+        ></div>
+        <div
+          id="section43"
+          class="tile"
+          onclick="changeColor('section43')"
+        ></div>
+        <div
+          id="section44"
+          class="tile"
+          onclick="changeColor('section44')"
+        ></div>
+        <div
+          id="section45"
+          class="tile"
+          onclick="changeColor('section45')"
+        ></div>
+        <div
+          id="section46"
+          class="tile"
+          onclick="changeColor('section46')"
+        ></div>
+        <div
+          id="section47"
+          class="tile"
+          onclick="changeColor('section47')"
+        ></div>
+        <div
+          id="section48"
+          class="tile"
+          onclick="changeColor('section48')"
+        ></div>
+        <div
+          id="section49"
+          class="tile"
+          onclick="changeColor('section49')"
+        ></div>
+        <div
+          id="section50"
+          class="tile"
+          onclick="changeColor('section50')"
+        ></div>
+      </div>
+
+      <!-- 6 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section51"
+          class="tile"
+          onclick="changeColor('section51')"
+        ></div>
+        <div
+          id="section52"
+          class="tile"
+          onclick="changeColor('section52')"
+        ></div>
+        <div
+          id="section53"
+          class="tile"
+          onclick="changeColor('section53')"
+        ></div>
+        <div
+          id="section54"
+          class="tile"
+          onclick="changeColor('section54')"
+        ></div>
+        <div
+          id="section55"
+          class="tile"
+          onclick="changeColor('section55')"
+        ></div>
+        <div
+          id="section56"
+          class="tile"
+          onclick="changeColor('section56')"
+        ></div>
+        <div
+          id="section57"
+          class="tile"
+          onclick="changeColor('section57')"
+        ></div>
+        <div
+          id="section58"
+          class="tile"
+          onclick="changeColor('section58')"
+        ></div>
+        <div
+          id="section59"
+          class="tile"
+          onclick="changeColor('section59')"
+        ></div>
+        <div
+          id="section60"
+          class="tile"
+          onclick="changeColor('section60')"
+        ></div>
+      </div>
+
+      <!-- 7 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section61"
+          class="tile"
+          onclick="changeColor('section61')"
+        ></div>
+        <div
+          id="section62"
+          class="tile"
+          onclick="changeColor('section62')"
+        ></div>
+        <div
+          id="section63"
+          class="tile"
+          onclick="changeColor('section63')"
+        ></div>
+        <div
+          id="section64"
+          class="tile"
+          onclick="changeColor('section64')"
+        ></div>
+        <div
+          id="section65"
+          class="tile"
+          onclick="changeColor('section65')"
+        ></div>
+        <div
+          id="section66"
+          class="tile"
+          onclick="changeColor('section66')"
+        ></div>
+        <div
+          id="section67"
+          class="tile"
+          onclick="changeColor('section67')"
+        ></div>
+        <div
+          id="section68"
+          class="tile"
+          onclick="changeColor('section68')"
+        ></div>
+        <div
+          id="section69"
+          class="tile"
+          onclick="changeColor('section69')"
+        ></div>
+        <div
+          id="section70"
+          class="tile"
+          onclick="changeColor('section70')"
+        ></div>
+      </div>
+
+      <!-- 8 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section71"
+          class="tile"
+          onclick="changeColor('section71')"
+        ></div>
+        <div
+          id="section72"
+          class="tile"
+          onclick="changeColor('section72')"
+        ></div>
+        <div
+          id="section73"
+          class="tile"
+          onclick="changeColor('section73')"
+        ></div>
+        <div
+          id="section74"
+          class="tile"
+          onclick="changeColor('section74')"
+        ></div>
+        <div
+          id="section75"
+          class="tile"
+          onclick="changeColor('section75')"
+        ></div>
+        <div
+          id="section76"
+          class="tile"
+          onclick="changeColor('section76')"
+        ></div>
+        <div
+          id="section77"
+          class="tile"
+          onclick="changeColor('section77')"
+        ></div>
+        <div
+          id="section78"
+          class="tile"
+          onclick="changeColor('section78')"
+        ></div>
+        <div
+          id="section79"
+          class="tile"
+          onclick="changeColor('section79')"
+        ></div>
+        <div
+          id="section80"
+          class="tile"
+          onclick="changeColor('section80')"
+        ></div>
+      </div>
+
+      <!-- 9 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section81"
+          class="tile"
+          onclick="changeColor('section81')"
+        ></div>
+        <div
+          id="section82"
+          class="tile"
+          onclick="changeColor('section82')"
+        ></div>
+        <div
+          id="section83"
+          class="tile"
+          onclick="changeColor('section83')"
+        ></div>
+        <div
+          id="section84"
+          class="tile"
+          onclick="changeColor('section84')"
+        ></div>
+        <div
+          id="section85"
+          class="tile"
+          onclick="changeColor('section85')"
+        ></div>
+        <div
+          id="section86"
+          class="tile"
+          onclick="changeColor('section86')"
+        ></div>
+        <div
+          id="section87"
+          class="tile"
+          onclick="changeColor('section87')"
+        ></div>
+        <div
+          id="section88"
+          class="tile"
+          onclick="changeColor('section88')"
+        ></div>
+        <div
+          id="section89"
+          class="tile"
+          onclick="changeColor('section89')"
+        ></div>
+        <div
+          id="section90"
+          class="tile"
+          onclick="changeColor('section90')"
+        ></div>
+      </div>
+
+      <!-- 10 -->
+      <div class="wrapper d-flex flex-row m-auto">
+        <div
+          id="section91"
+          class="tile"
+          onclick="changeColor('section91')"
+        ></div>
+        <div
+          id="section92"
+          class="tile"
+          onclick="changeColor('section92')"
+        ></div>
+        <div
+          id="section93"
+          class="tile"
+          onclick="changeColor('section93')"
+        ></div>
+        <div
+          id="section94"
+          class="tile"
+          onclick="changeColor('section94')"
+        ></div>
+        <div
+          id="section95"
+          class="tile"
+          onclick="changeColor('section95')"
+        ></div>
+        <div
+          id="section96"
+          class="tile"
+          onclick="changeColor('section96')"
+        ></div>
+        <div
+          id="section97"
+          class="tile"
+          onclick="changeColor('section97')"
+        ></div>
+        <div
+          id="section98"
+          class="tile"
+          onclick="changeColor('section98')"
+        ></div>
+        <div
+          id="section99"
+          class="tile"
+          onclick="changeColor('section99')"
+        ></div>
+        <div
+          id="section100"
+          class="tile"
+          onclick="changeColor('section100')"
+        ></div>
+      </div>
+    </div>
+
+    <div style="margin: auto; width: 150px">
+      <button class="btn bg-primary text-white my-4" onclick="resetfield()">
+        Start color again
+      </button>
+    </div>
+
+    <script type="text/javascript">
+      function colorchange() {
+        var x = document.getElementById("color2").value;
+        console.log(x);
+        var y = x;
+
+        return y;
+      }
+
+      function changeColor(aa) {
+        console.log(colorchange());
+        var content = (document.getElementById(aa).style.cssText =
+          "background-color: " + colorchange() + ";");
+      }
+
+      function resetfield() {
+        var cols = document.querySelectorAll(".tile");
+        cols.style.backgroundColor = "white";
+        console.log(cols);
+      }
+    </script>
+  </body>
+</html>
